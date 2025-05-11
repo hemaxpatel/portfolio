@@ -69,13 +69,9 @@ const TimelineItem = ({
     iconStyle={{ background: iconBg, color: "#fff" }}
     icon={icon}
   >
-    {/* Title (Designation) */}
-    <h3 className="text-xl font-bold text-white">{title}</h3>
-
-    {/* Subtitle (Company Name or Institute) */}
-    <h4 className="text-sm font-medium text-gray-300 italic">{subtitle}</h4>
-
-    <ul className="list-disc pl-5 py-2">
+    <h3 className="vertical-timeline-element-title">{title}</h3>
+    <h4 className="vertical-timeline-element-subtitle">{subtitle}</h4>
+    <ul className="list-disc pl-5 py-5">
       {points.map((point, idx) => (
         <li key={idx}>{point}</li>
       ))}

@@ -14,26 +14,30 @@ export default function Home() {
   const slugs = [
     "c",
     "cplusplus",
-    "typescript",
-    "javascript",
     "java",
-    "react",
+    "python",
     "html5",
     "css3",
+    "javascript",
+    "typescript",
+    "react",
+    "redux",
     "tailwindcss",
+    "bootstrap",
     "nodedotjs",
     "express",
+    "postman",
+    "mongodb",
+    "postgresql",
     "nextdotjs",
     "prisma",
     "amazonaws",
-    "python",
-    "bootstrap",
-    "postgresql",
-    "mongodb",
+    "googlecloud",
     "git",
     "github",
     "visualstudiocode",
-    "figma",
+    // "docker",
+    // "figma",
   ];
 
   // particles
@@ -50,7 +54,7 @@ export default function Home() {
         {/* intro */}
         <Intro />
 
-        {/* icon cloud */}
+        {/* Skill Planet */}
         <div className="mt-10 text-center z-10">
           <h2 className="text-4xl md:text-5xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-cyan-400 via-blue-400 to-purple-400">
             Skill Planet
@@ -61,15 +65,15 @@ export default function Home() {
         </div>
         <IconCloud iconSlugs={slugs} />
 
-        {/* timeline */}
-        <div className="mt-20 z-10 px-4 md:px-10 w-full text-center max-w-5xl">
-          <h2 className="p-4 text-4xl md:text-5xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-cyan-400 via-blue-400 to-purple-600">
+        {/* My Journey */}
+        <div className="mt-20 z-10 px-4 md:px-10 w-full max-w-5xl">
+          <h2 className="p-4 text-4xl text-center md:text-5xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-cyan-400 via-blue-400 to-purple-600">
             My Journey
           </h2>
           <Timeline />
         </div>
 
-        {/* Social */}
+        {/* Social Nebula */}
         <Social />
 
         {/* particles bg*/}
