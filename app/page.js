@@ -3,11 +3,11 @@ import React from "react";
 import { useTheme } from "next-themes";
 import { useEffect, useState } from "react";
 
-import { Vortex } from "@/components/ui/vortex";
 import IconCloud from "@/components/ui/icon-cloud";
 import Particles from "@/components/ui/particles";
 import Timeline from "@/components/timeline";
 import Intro from "@/components/intro";
+import Social from "@/components/social";
 
 export default function Home() {
   // icon cloud
@@ -52,7 +52,7 @@ export default function Home() {
 
         {/* icon cloud */}
         <div className="mt-10 text-center z-10">
-          <h2 className="text-4xl md:text-5xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-cyan-400 via-blue-400 to-purple-400">
+          <h2 className="text-4xl md:text-5xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-cyan-400 via-blue-400 to-purple-400">
             Skill Planet
           </h2>
           <p className="text-gray-300 mt-2 text-sm md:text-base italic">
@@ -62,30 +62,17 @@ export default function Home() {
         <IconCloud iconSlugs={slugs} />
 
         {/* timeline */}
-        <div className="mt-20 z-10 px-4 md:px-10 w-full max-w-5xl">
-          <h1 className="text-4xl md:text-5xl font-bold mb-10 text-center text-white tracking-wide uppercase drop-shadow-lg">
-            My Journey 🌌
-          </h1>
+        <div className="mt-20 z-10 px-4 md:px-10 w-full text-center max-w-5xl">
+          <h2 className="p-4 text-4xl md:text-5xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-cyan-400 via-blue-400 to-purple-600">
+            My Journey
+          </h2>
           <Timeline />
         </div>
 
-        {/* Vortex */}
-        <div className="w-full h-full overflow-hidden">
-          <Vortex
-            backgroundColor="black"
-            className="flex flex-col items-center justify-center w-full h-full px-2 py-4 md:px-10"
-          >
-            <h2 className="text-2xl font-bold text-center text-white md:text-6xl">
-              The hell is this?
-            </h2>
-            <p className="max-w-xl mt-6 text-sm text-center text-white md:text-2xl">
-              This is chemical burn. It&apos;ll hurt more than you&apos;ve ever
-              been burned and you&apos;ll have a scar.
-            </p>
-          </Vortex>
-        </div>
+        {/* Social */}
+        <Social />
 
-        {/* particles */}
+        {/* particles bg*/}
         <Particles
           className="absolute inset-0 z-0"
           quantity={500}

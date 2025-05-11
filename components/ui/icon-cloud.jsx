@@ -12,7 +12,7 @@ export const cloudProps = {
       width: "100%",
       background: "transparent",
       // height: "screen",
-      paddingTop: 40,
+      paddingTop: 30,
     },
   },
   options: {

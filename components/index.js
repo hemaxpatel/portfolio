@@ -3,6 +3,7 @@ import IconCloud from "./ui/icon-cloud";
 import Particles from "./ui/particles";
 import Timeline from "./timeline";
 import Intro from "./intro";
+import Social from "./social";
 import { Dock, DockIcon, dockVariants } from "./ui/dock";
 
 export {
@@ -11,6 +12,7 @@ export {
   Particles,
   Timeline,
   Intro,
+  Social,
   Dock,
   DockIcon,
   dockVariants,
