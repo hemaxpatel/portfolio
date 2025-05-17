@@ -45,7 +45,7 @@ export default function Intro() {
   }, []);
 
   return (
-    <section className="hero container w-full min-h-screen flex items-center justify-center px-8 py-16">
+    <section className="hero container w-full min-h-screen flex items-center justify-center px-8 py-8">
       <div className="w-full max-w-screen-xl flex flex-col xl:flex-row justify-center items-center md:px-24 px-12 gap-12">
         {/* Left Section */}
         <div className="left-flex flex-1 text-left" data-aos="fade-right">

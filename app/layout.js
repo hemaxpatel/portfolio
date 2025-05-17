@@ -12,7 +12,7 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata = {
-  title: "Hemax Patel's Portfolio",
+  title: "Hemax Patel's Portfolio | Space Theme Portfolio",
   description:
     "Hemax Patel's personal portfolio showcasing my skills and projects.",
 };

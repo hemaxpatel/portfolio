@@ -1,13 +1,15 @@
 "use client";
-import React from "react";
-import { useTheme } from "next-themes";
-import { useEffect, useState } from "react";
+// import React from "react";
+// import { useTheme } from "next-themes";
+// import { useEffect, useState } from "react";
 
 import IconCloud from "@/components/ui/icon-cloud";
 import Particles from "@/components/ui/particles";
 import Timeline from "@/components/timeline";
 import Intro from "@/components/intro";
 import Social from "@/components/social";
+import ProjectCard from "@/components/projects/projectcard";
+import projects from "@/components/projects/projects.js";
 
 export default function Home() {
   // icon cloud
@@ -41,16 +43,25 @@ export default function Home() {
   ];
 
   // particles
-  const { resolvedTheme } = useTheme();
-  const [color, setColor] = useState("#ffffff");
+  // const { resolvedTheme } = useTheme();
+  // const [color, setColor] = useState("#ffffff");
 
-  useEffect(() => {
-    setColor(resolvedTheme === "dark" ? "#ffffff" : "#000000");
-  }, [resolvedTheme]);
+  // useEffect(() => {
+  //   setColor(resolvedTheme === "dark" ? "#ffffff" : "#000000");
+  // }, [resolvedTheme]);
 
   return (
     <>
-      <div className="relative flex h-[3000px] w-full flex-col items-center justify-center overflow-hidden bg-foreground md:shadow-xl">
+      <div className="relative flex xl:h-[4000px] md:h-[4700px] h-[5150px]  w-full flex-col items-center justify-center overflow-hidden bg-foreground md:shadow-xl">
+        {/* particles bg*/}
+        <Particles
+          className="absolute inset-0 z-0"
+          quantity={600}
+          ease={80}
+          color={"#ffffff"}
+          refresh
+        />
+
         {/* intro */}
         <Intro />
 
@@ -67,23 +78,27 @@ export default function Home() {
 
         {/* My Journey */}
         <div className="mt-20 z-10 px-4 md:px-10 w-full max-w-5xl">
-          <h2 className="p-4 text-4xl text-center md:text-5xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-cyan-400 via-blue-400 to-purple-600">
+          <h2 className="p-4 text-4xl text-center md:text-5xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-cyan-400 via-blue-400 to-violet-400">
             My Journey
           </h2>
           <Timeline />
         </div>
 
+        {/* Projects */}
+        <div className="mt-20 z-10 px-4 w-full max-w-6xl justify- text-center">
+          <h2 className="text-4xl md:text-5xl font-bold text-transparent mb-6 bg-clip-text bg-gradient-to-r from-cyan-400 via-blue-400 to-purple-400">
+            Projects by me
+          </h2>
+
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 justify-center items-center">
+            {projects.map((project) => (
+              <ProjectCard key={project.id} project={project} />
+            ))}
+          </div>
+        </div>
+
         {/* Social Nebula */}
         <Social />
-
-        {/* particles bg*/}
-        <Particles
-          className="absolute inset-0 z-0"
-          quantity={500}
-          ease={80}
-          color={"#ffffff"}
-          refresh
-        />
       </div>
     </>
   );
