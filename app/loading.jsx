@@ -1,17 +1,23 @@
 "use client";
 
-import Image from "next/image";
 import React from "react";
+import { RocketIcon } from "lucide-react";
 
-const loading = () => {
+const Loading = () => {
   return (
-    <div className="relative flex flex-col items-center justify-center min-h-screen bg-black">
-      <div className="animate-spin rounded-full h-32 w-32 border-t-4 border-cyan-500 border-solid"></div>
-      <div className="absolute">
-        <Image src="/globe.svg" alt="loading" width={100} height={100} />
+    <div className="flex flex-col items-center justify-center min-h-screen bg-black relative">
+      {/* Spinning ring around the rocket */}
+      <div className="relative w-32 h-32 flex items-center justify-center">
+        <div className="absolute inset-0 animate-spin rounded-full border-t-4 border-blue-400 border-solid" />
+        <RocketIcon className="w-20 h-20 text-blue-400 z-10" />
       </div>
+
+      {/* Text below */}
+      <p className="mt-6 text-xl text-blue-400 font-semibold italic tracking-wide text-center">
+        Launching... please wait
+      </p>
     </div>
   );
 };
 
-export default loading;
+export default Loading;
