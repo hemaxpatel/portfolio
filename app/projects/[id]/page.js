@@ -26,6 +26,7 @@ const ProjectDetails = () => {
 
   return (
     <div className="relative min-h-screen w-full bg-black text-white overflow-hidden">
+      {/* Particles BG */}
       <Particles
         className="absolute inset-0 z-0"
         quantity={300}
@@ -36,7 +37,7 @@ const ProjectDetails = () => {
 
       <div className="relative z-10 px-4 py-10 md:px-16 max-w-6xl mx-auto">
         {/* Title */}
-        <h1 className="text-4xl md:text-5xl font-bold text-transparent mb-2 bg-clip-text bg-gradient-to-r from-cyan-400 via-blue-400 to-purple-400">
+        <h1 className="inline-block text-4xl md:text-5xl font-bold text-transparent mb-2 bg-clip-text bg-gradient-to-r from-cyan-400 via-blue-400 to-purple-400">
           {project.name}
         </h1>
         <p className="text-lg text-gray-300 mb-6 leading-relaxed">
@@ -48,7 +49,7 @@ const ProjectDetails = () => {
           <img
             src={project.images[currentSlide]}
             alt={`Slide ${currentSlide + 1}`}
-            className="w-full h-[200px] md:h-[500px] object-cover rounded-xl shadow-lg border border-gray-700 cursor-pointer"
+            className="w-full h-[200px] md:h-[350px] xl:h-[500px] object-cover rounded-xl shadow-lg border border-gray-700 cursor-pointer"
             onClick={() => setFullscreenImg(project.images[currentSlide])}
           />
           <button

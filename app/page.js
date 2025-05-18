@@ -30,6 +30,7 @@ export default function Home() {
     "express",
     "postman",
     "mongodb",
+    "mysql",
     "postgresql",
     "nextdotjs",
     "prisma",
@@ -78,16 +79,19 @@ export default function Home() {
 
         {/* My Journey */}
         <div className="mt-20 z-10 px-4 md:px-10 w-full max-w-5xl">
-          <h2 className="p-4 text-4xl text-center md:text-5xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-cyan-400 via-blue-400 to-violet-400">
-            My Journey
-          </h2>
+          <div className="text-center">
+            <h2 className="inline-block p-4 text-4xl md:text-5xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-cyan-400 via-blue-400 to-purple-400">
+              My Journey
+            </h2>
+          </div>
+
           <Timeline />
         </div>
 
         {/* Projects */}
-        <div className="mt-20 z-10 px-4 w-full max-w-6xl justify- text-center">
-          <h2 className="text-4xl md:text-5xl font-bold text-transparent mb-6 bg-clip-text bg-gradient-to-r from-cyan-400 via-blue-400 to-purple-400">
-            Projects by me
+        <div className="mt-20 z-10 px-4 w-full max-w-6xl justify-center text-center">
+          <h2 className="inline-block p-4 text-4xl md:text-5xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-cyan-400 via-blue-400 to-purple-400">
+            Projects
           </h2>
 
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 justify-center items-center">

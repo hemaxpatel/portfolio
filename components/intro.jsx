@@ -5,9 +5,9 @@ import astronautImg from "../public/astronaut.png";
 
 const titles = [
   "Full Stack Developer",
-  "Backend Developer",
-  "Frontend Developer",
+  "Programmer",
   "Cloud Enthusiast",
+  "Problem Solver",
   "Imaginary Astronaut",
 ];
 

@@ -1,7 +1,7 @@
 const projects = [
   {
     id: "pankh",
-    name: "Pankh",
+    name: "PANKH",
     tagline: "Official Full Stack Event & Club Management Portal",
     thumbnail: "/pankh1.png",
     description: "A 3D visualization app to explore galaxies and star systems.",
@@ -14,7 +14,13 @@ const projects = [
       "Tailwind CSS",
       "Cloudinary",
     ],
-    images: ["/pankh1.png", "/pankh2.png"],
+    images: [
+      "/pankh1.png",
+      "/pankh2.png",
+      "/pankh3.png",
+      "/pankh4.png",
+      "/pankh5.png",
+    ],
     github: "https://github.com/hemaxpatel/PANKH",
   },
   {
@@ -42,7 +48,7 @@ const projects = [
     id: "urban-axis",
     name: "Urban Axis",
     tagline: "Full Stack Real Estate Web App",
-    thumbnail: "/urban-axis1.jpg",
+    thumbnail: "/urban-axis1.png",
     description: "A 3D visualization app to explore galaxies and star systems.",
     techStack: [
       "React.js",
@@ -54,7 +60,13 @@ const projects = [
       "Socket.io",
       "Cloudinary",
     ],
-    images: ["/urban-axis1.jpg", "/urban-axis2.jpg"],
+    images: [
+      "/urban-axis1.png",
+      "/urban-axis2.png",
+      "/urban-axis3.png",
+      "/urban-axis4.png",
+      "/urban-axis5.png",
+    ],
     github: "https://github.com/hemaxpatel/Urban-Axis",
   },
   {
@@ -76,6 +88,7 @@ const projects = [
       "/digital-rosca1.png",
       "/digital-rosca2.png",
       "/digital-rosca3.png",
+      "/digital-rosca4.png",
     ],
     github: "https://github.com/hemaxpatel/Digital-ROSCA",
   },

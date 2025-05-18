@@ -58,7 +58,6 @@ const TimelineItem = ({
     className="vertical-timeline-element"
     contentStyle={{
       background: "#1a1a1a",
-      // background:"transparent",
       color: "#ffffff",
       borderBottom: `4px solid ${borderColor}`,
     }}
