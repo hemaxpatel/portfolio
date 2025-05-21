@@ -6,6 +6,7 @@ import Intro from "./intro";
 import Social from "./social";
 import ProjectCard from "./projects/projectcard";
 import projects from "./projects/projects";
+import Navbar from "./navbar";
 import { Dock, DockIcon, dockVariants } from "./ui/dock";
 
 export {
@@ -17,6 +18,7 @@ export {
   Social,
   ProjectCard,
   projects,
+  Navbar,
   Dock,
   DockIcon,
   dockVariants,

@@ -89,7 +89,10 @@ export default function Home() {
         </div>
 
         {/* Projects */}
-        <div className="mt-20 z-10 px-4 w-full max-w-6xl justify-center text-center">
+        <div
+          id="projects"
+          className="mt-20 z-10 px-4 w-full max-w-6xl justify-center text-center"
+        >
           <h2 className="inline-block p-4 text-4xl md:text-5xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-cyan-400 via-blue-400 to-purple-400">
             Projects
           </h2>
@@ -102,6 +105,7 @@ export default function Home() {
         </div>
 
         {/* Social Nebula */}
+        <span id="contact"></span>
         <Social />
       </div>
     </>
