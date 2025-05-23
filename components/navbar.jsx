@@ -38,7 +38,7 @@ export default function Navbar() {
           href="/"
           className="w-10 h-10 mt-2 rounded-lg bg-white flex items-center justify-center font-bold shadow-md"
         >
-          <p className="bg-gradient-to-r from-cyan-500 via-blue-500 to-purple-500 bg-clip-text text-transparent">
+          <p className="bg-gradient-to-r from-cyan-500 to-blue-500 bg-clip-text text-transparent">
             HP
           </p>
         </Link>

@@ -6,44 +6,44 @@ import { SiHackerrank, SiLeetcode, SiGooglecloud } from "react-icons/si";
 
 const socialLinks = [
   {
-    icon: <MdEmail className="w-12 h-12" />,
+    icon: MdEmail,
     url: "mailto:hemax.work@gmail.com",
     label: "Email",
     hoverColor: "hover:text-red-500",
   },
   {
-    icon: <FaGithub className="w-12 h-12" />,
+    icon: FaGithub,
     url: "https://github.com/hemaxpatel",
     label: "GitHub",
     hoverColor: "hover:text-gray-300",
   },
   {
-    icon: <FaLinkedin className="w-12 h-12" />,
+    icon: FaLinkedin,
     url: "https://www.linkedin.com/in/hemax-patel",
     label: "LinkedIn",
     hoverColor: "hover:text-blue-400",
   },
   {
-    icon: <FaInstagram className="w-12 h-12" />,
+    icon: FaInstagram,
     url: "https://www.instagram.com/hemax_patel",
     label: "Instagram",
     hoverColor: "hover:text-pink-400",
   },
   {
-    icon: <SiHackerrank className="w-12 h-12" />,
+    icon: SiHackerrank,
     url: "https://www.hackerrank.com/hemaxpatel",
     label: "HackerRank",
     hoverColor: "hover:text-green-500",
   },
   {
-    icon: <SiLeetcode className="w-12 h-12" />,
+    icon: SiLeetcode,
     url: "https://leetcode.com/hemaxpatel",
     label: "LeetCode",
     hoverColor: "hover:text-yellow-400",
   },
   {
-    icon: <SiGooglecloud className="w-12 h-12" />,
-    url: " https://www.cloudskillsboost.google/public_profiles/444b90fd-6496-431d-bf77-99290f5912ee",
+    icon: SiGooglecloud,
+    url: "https://www.cloudskillsboost.google/public_profiles/444b90fd-6496-431d-bf77-99290f5912ee",
     label: "Google Cloud",
     hoverColor: "hover:text-blue-400",
   },
@@ -67,7 +67,9 @@ export default function Social() {
               rel="noopener noreferrer"
               className={`text-white transition-transform transform hover:scale-110 ${link.hoverColor}`}
             >
-              {link.icon}
+              <span className="w-8 h-8 md:w-12 md:h-12 inline-block">
+                <link.icon className="w-full h-full" />
+              </span>
             </a>
           ))}
         </div>
