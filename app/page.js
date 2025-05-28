@@ -53,11 +53,11 @@ export default function Home() {
 
   return (
     <>
-      <div className="relative flex xl:h-[4000px] md:h-[4700px] h-[5150px]  w-full flex-col items-center justify-center overflow-hidden bg-foreground md:shadow-xl">
+      <div className="relative w-full flex flex-col items-center justify-start overflow-hidden bg-foreground md:shadow-xl min-h-screen">
         {/* particles bg*/}
         <Particles
           className="absolute inset-0 z-0"
-          quantity={600}
+          quantity={800}
           ease={80}
           color={"#ffffff"}
           refresh
@@ -68,7 +68,7 @@ export default function Home() {
 
         {/* Skill Planet */}
         <div className="mt-10 text-center z-10">
-          <h2 className="text-4xl md:text-5xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-cyan-400 via-blue-400 to-purple-400">
+          <h2 className="inline-block text-4xl md:text-5xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-cyan-400 via-blue-400 to-purple-500">
             Skill Planet
           </h2>
           <p className="text-gray-300 mt-2 text-sm md:text-base italic">
@@ -80,7 +80,7 @@ export default function Home() {
         {/* My Journey */}
         <div className="mt-20 z-10 px-4 md:px-10 w-full max-w-5xl">
           <div className="text-center">
-            <h2 className="inline-block p-4 text-4xl md:text-5xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-cyan-400 via-blue-400 to-purple-400">
+            <h2 className="inline-block p-4 text-4xl md:text-5xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-cyan-400 via-blue-400 to-purple-500">
               My Journey
             </h2>
           </div>
@@ -93,7 +93,7 @@ export default function Home() {
           id="projects"
           className="mt-20 z-10 px-4 w-full max-w-6xl justify-center text-center"
         >
-          <h2 className="inline-block p-4 text-4xl md:text-5xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-cyan-400 via-blue-400 to-purple-400">
+          <h2 className="inline-block p-4 text-4xl md:text-5xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-cyan-400 via-blue-400 to-purple-500">
             Projects
           </h2>
 
@@ -106,7 +106,7 @@ export default function Home() {
 
         {/* Social Nebula */}
         <span id="contact"></span>
-        <Social />
+        {/* <Social /> */}
       </div>
     </>
   );

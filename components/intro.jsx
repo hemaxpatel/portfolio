@@ -5,8 +5,7 @@ import astronautImg from "../public/astronaut.png";
 
 const titles = [
   "Full Stack Developer",
-  "Programmer",
-  "Cloud Enthusiast",
+  "Cloud Computing Enthusiast",
   "Problem Solver",
   "Imaginary Astronaut",
 ];
@@ -55,12 +54,12 @@ export default function Intro() {
             </h1>
           </div>
           <div className="title-heading mb-4">
-            <h1 className="text-4xl md:text-6xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-cyan-300 via-blue-400 to-purple-400">
+            <h1 className="text-4xl md:text-6xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-cyan-400 via-blue-400 to-purple-500">
               <span className="font-thin text-white">I'm</span> Hemax Patel
             </h1>
           </div>
           <div className="con mt-4">
-            <span className="text sec-text text-2xl md:text-3xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-cyan-300 via-blue-400 to-purple-400">
+            <span className="text sec-text text-2xl md:text-3xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-cyan-400 via-blue-400 to-purple-500">
               {text}
             </span>
             <span className="text-white">{blink ? "|" : " "}</span>
@@ -70,7 +69,7 @@ export default function Intro() {
               href="https://drive.google.com/drive/folders/1BN19cZinHWzRGpyarn03PJ4Pv9PYBBM0?usp=drive_link"
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-block mt-6 px-6 py-3 bg-gradient-to-r from-cyan-600 via-blue-500 to-purple-500 text-white rounded-full shadow-lg hover:scale-105 transition-transform duration-300"
+              className="inline-block mt-6 px-6 py-3 bg-gradient-to-r from-cyan-600 via-blue-500 to-purple-600 text-white rounded-full shadow-lg hover:scale-105 transition-transform duration-300"
             >
               Download Resume
             </a>

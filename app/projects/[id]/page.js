@@ -1,11 +1,13 @@
 "use client";
+
 import React, { useState } from "react";
-import { useParams } from "next/navigation";
+import { useParams, useRouter } from "next/navigation";
 import { projects } from "@/components/index.js";
 import Particles from "@/components/ui/particles";
 
 const ProjectDetails = () => {
   const params = useParams();
+  const router = useRouter();
   const id = params?.id;
   const project = projects.find((p) => p.id.toString() === id);
 
@@ -36,10 +38,21 @@ const ProjectDetails = () => {
       />
 
       <div className="relative z-10 px-8 py-10 max-w-6xl mx-auto">
+        {/* Back to Home Button */}
+        <div className="mb-4">
+          <button
+            onClick={() => router.push("/")}
+            className="px-5 py-2 bg-transparent text-white rounded-lg font-medium shadow-md"
+          >
+            ← Back
+          </button>
+        </div>
+
         {/* Title */}
-        <h1 className="inline-block text-4xl md:text-5xl font-bold text-transparent mb-2 bg-clip-text bg-gradient-to-r from-cyan-400 via-blue-400 to-purple-400">
+        <h1 className="inline-block text-4xl md:text-5xl font-bold text-transparent mb-2 bg-clip-text bg-gradient-to-r from-cyan-400 via-blue-400 to-purple-500">
           {project.name}
         </h1>
+
         <p className="text-lg text-gray-300 mb-6 leading-relaxed">
           {project.tagline}
         </p>
@@ -86,7 +99,7 @@ const ProjectDetails = () => {
           href={project.github}
           target="_blank"
           rel="noopener noreferrer"
-          className="inline-block px-6 py-3 bg-gradient-to-r from-cyan-600 via-blue-500 to-purple-500 text-white rounded-lg font-medium shadow-md"
+          className="inline-block px-6 py-3 bg-gradient-to-r from-cyan-600 via-blue-500 to-purple-600 text-white rounded-lg font-medium shadow-md"
         >
           View on GitHub
         </a>
