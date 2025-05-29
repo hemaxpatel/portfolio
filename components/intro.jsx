@@ -47,7 +47,7 @@ export default function Intro() {
     <section className="hero container w-full min-h-screen flex items-center justify-center px-8 py-8">
       <div className="w-full max-w-screen-xl flex flex-col xl:flex-row justify-center items-center md:px-24 px-12 gap-12">
         {/* Left Section */}
-        <div className="left-flex flex-1 text-left" data-aos="fade-right">
+        <div className="left-flex flex-1 text-left z-10" data-aos="fade-right">
           <div className="title-hi mb-4">
             <h1 className="text-4xl md:text-5xl text-white">
               Hello! <span className="animate-wave">👋🏻</span>
