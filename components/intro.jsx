@@ -69,7 +69,7 @@ export default function Intro() {
               href="https://drive.google.com/drive/folders/1BN19cZinHWzRGpyarn03PJ4Pv9PYBBM0?usp=drive_link"
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-block mt-6 px-6 py-3 bg-gradient-to-r from-cyan-600 via-blue-500 to-purple-600 text-white rounded-full shadow-lg hover:scale-105 transition-transform duration-300"
+              className="inline-block mt-6 px-6 py-3 bg-gradient-to-r from-cyan-500 via-blue-500 to-purple-500 text-white rounded-full shadow-lg hover:scale-105 transition-transform duration-300"
             >
               Download Resume
             </a>

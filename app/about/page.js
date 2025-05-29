@@ -10,9 +10,9 @@ const certifications = [
   "AWS Academy Graduate - AWS Academy Cloud Developing",
   "HackerRank Certified Software Engineer",
   "HackerRank Certified Frontend Developer",
-  "Postman API Fundamentals Student Expert",
+  // "Postman API Fundamentals Student Expert",
   "IBM Node.js & MongoDB: Developing Backend Database Applicatons",
-  "Meta Programming the JavaScript",
+  // "Meta Programming the JavaScript",
   //   ,
 ];
 

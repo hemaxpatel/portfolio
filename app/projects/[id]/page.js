@@ -39,7 +39,7 @@ const ProjectDetails = () => {
 
       <div className="relative z-10 px-8 py-10 max-w-6xl mx-auto">
         {/* Title */}
-        <h1 className="inline-block text-4xl md:text-5xl font-bold text-transparent mb-2 bg-clip-text bg-gradient-to-r from-cyan-400 via-blue-400 to-purple-500">
+        <h1 className="inline-block text-4xl md:text-5xl font-bold text-transparent mb-2 bg-clip-text bg-gradient-to-r from-cyan-400 via-blue-400 to-purple-400">
           {project.name}
         </h1>
 
@@ -89,7 +89,7 @@ const ProjectDetails = () => {
           href={project.github}
           target="_blank"
           rel="noopener noreferrer"
-          className="inline-block px-6 py-3 bg-gradient-to-r from-cyan-600 via-blue-500 to-purple-600 text-white rounded-lg font-medium shadow-md"
+          className="inline-block px-6 py-3 bg-gradient-to-r from-cyan-500 via-blue-500 to-purple-500 text-white rounded-lg font-medium shadow-md"
         >
           View on GitHub
         </a>

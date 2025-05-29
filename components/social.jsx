@@ -53,7 +53,7 @@ export default function Social() {
   return (
     <div className="w-full h-full overflow-hidden">
       <Vortex className="flex flex-col items-center justify-center w-full h-full px-2 py-4 md:px-12">
-        <h2 className="text-4xl md:text-5xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-cyan-400 via-blue-500 to-purple-500">
+        <h2 className="text-4xl md:text-5xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-cyan-400 via-blue-400 to-purple-400">
           Social Nebula
         </h2>
 
