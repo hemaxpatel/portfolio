@@ -91,7 +91,7 @@ export default function Home() {
         {/* Projects */}
         <div
           id="projects"
-          className="mt-20 z-10 px-4 w-full max-w-6xl justify-center text-center"
+          className="my-20 z-10 px-4 w-full max-w-6xl justify-center text-center"
         >
           <h2 className="inline-block p-4 text-4xl md:text-5xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-cyan-400 via-blue-400 to-purple-500">
             Projects
