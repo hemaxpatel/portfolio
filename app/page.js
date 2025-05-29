@@ -3,13 +3,12 @@
 // import { useTheme } from "next-themes";
 // import { useEffect, useState } from "react";
 
-import IconCloud from "@/components/ui/icon-cloud";
 import Particles from "@/components/ui/particles";
-import Timeline from "@/components/timeline";
 import Intro from "@/components/intro";
+import IconCloud from "@/components/ui/icon-cloud";
+import Timeline from "@/components/timeline";
+import Projects from "@/components/projects.jsx";
 import Social from "@/components/social";
-import ProjectCard from "@/components/projects/projectcard";
-import projects from "@/components/projects/projects.js";
 
 export default function Home() {
   // icon cloud
@@ -97,16 +96,10 @@ export default function Home() {
           <h2 className="inline-block p-4 text-4xl md:text-5xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-cyan-400 via-blue-400 to-purple-500">
             Projects
           </h2>
-
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 justify-center items-center">
-            {projects.map((project) => (
-              <ProjectCard key={project.id} project={project} />
-            ))}
-          </div>
+          <Projects />
         </div>
 
         {/* Social Nebula */}
-        <span id="contact"></span>
         {/* <Social /> */}
       </div>
     </>

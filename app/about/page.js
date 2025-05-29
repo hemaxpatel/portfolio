@@ -17,7 +17,7 @@ const certifications = [
 ];
 
 const achievements = [
-  "5⭐ in C, C++ and Python on HackerRank",
+  // "5⭐ in C, C++ and Python on HackerRank",
   "5⭐ in Problem Solving on HackerRank",
   "180+ Leetcode problems solved",
   "7 skill badges and 26 badges of Google Cloud",

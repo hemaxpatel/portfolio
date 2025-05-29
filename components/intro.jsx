@@ -55,7 +55,7 @@ export default function Intro() {
           </div>
           <div className="title-heading mb-4">
             <h1 className="text-4xl md:text-6xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-cyan-400 via-blue-400 to-purple-500">
-              <span className="font-thin text-white">I'm</span> Hemax Patel
+              <span className="font-normal text-white">I'm</span> Hemax Patel
             </h1>
           </div>
           <div className="con mt-4">
@@ -78,7 +78,7 @@ export default function Intro() {
 
         {/* Right Section (Image) */}
         <div
-          className="right-flex flex-1 justify-center items-center flex"
+          className="right-flex flex-1 justify-center items-center flex z-10"
           data-aos="zoom-in"
         >
           <div className="hero-image -ml-12">

@@ -49,6 +49,23 @@ const projects = [
     github: "https://github.com/hemaxpatel/Digital-ROSCA",
   },
   {
+    id: "sabras",
+    name: "Sabras",
+    tagline: "Full Stack Subras Online Store",
+    thumbnail: "/sabras1.jpg",
+    description:
+      "Sabras is a powerful and scalable full-stack e-commerce web application that provides a seamless online shopping experience for users and robust management tools for administrators. Designed with a focus on performance, usability, and security, Sabras demonstrates the core functionalities required to run a modern online store. Sabras enables customers to browse products, manage their cart, and complete secure purchases, while also offering administrators a dedicated dashboard to manage products, view orders, and oversee user activity. The application integrates real-time payment functionality and leverages modern technologies to create an efficient and user-friendly shopping experience.",
+    techStack: ["React.js", "Node.js", "Express.js", "MongoDB", "Stripe"],
+    images: [
+      "/sabras1.jpg",
+      "/sabras2.jpg",
+      "/sabras3.jpg",
+      "/sabras4.jpg",
+      "/sabras5.jpg",
+    ],
+    github: "https://github.com/hemaxpatel/Sabras",
+  },
+  {
     id: "engineers-depot",
     name: "Engineer's Depot",
     tagline: "Full Stack Job Portal",
@@ -95,23 +112,6 @@ const projects = [
       "/urban-axis5.png",
     ],
     github: "https://github.com/hemaxpatel/Urban-Axis",
-  },
-  {
-    id: "sabras",
-    name: "Sabras",
-    tagline: "Full Stack Subras Mukhwas Online Store",
-    thumbnail: "/sabras1.jpg",
-    description:
-      "Sabras is a powerful and scalable full-stack e-commerce web application that provides a seamless online shopping experience for users and robust management tools for administrators. Designed with a focus on performance, usability, and security, Sabras demonstrates the core functionalities required to run a modern online store. Sabras enables customers to browse products, manage their cart, and complete secure purchases, while also offering administrators a dedicated dashboard to manage products, view orders, and oversee user activity. The application integrates real-time payment functionality and leverages modern technologies to create an efficient and user-friendly shopping experience.",
-    techStack: ["React.js", "Node.js", "Express.js", "MongoDB", "Stripe"],
-    images: [
-      "/sabras1.jpg",
-      "/sabras2.jpg",
-      "/sabras3.jpg",
-      "/sabras4.jpg",
-      "/sabras5.jpg",
-    ],
-    github: "https://github.com/hemaxpatel/Sabras",
   },
   {
     id: "om-party-plot",
