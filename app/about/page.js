@@ -13,10 +13,16 @@ const certifications = [
   "Postman API Fundamentals Student Expert",
   "IBM Node.js & MongoDB: Developing Backend Database Applicatons",
   "Meta Programming the JavaScript",
-  //   "LeetCode – 200+ DSA problems solved",
+  //   ,
 ];
 
-const achievements = ["5⭐ "];
+const achievements = [
+  "5⭐ in C, C++ and Python on HackerRank",
+  "5⭐ in Problem Solving on HackerRank",
+  "180+ Leetcode problems solved",
+  "7 skill badges and 26 badges of Google Cloud",
+  "20+ trophies and 110+ badges on Microsoft Learn",
+];
 
 const About = () => {
   const router = useRouter();
@@ -36,7 +42,7 @@ const About = () => {
         {/* About Me Section */}
         <section id="about-me" className="space-y-4">
           <h2 className="text-4xl font-bold text-cyan-400">About Me</h2>
-          <p className="text-gray-300 text-lg leading-relaxed">
+          <p className="text-gray-300 text-lg leading-relaxed text-justify">
             I'm <strong>Hemax Patel</strong>, a passionate full-stack developer
             and cloud computing enthusiast. I love building scalable web apps,
             solving real-world problems, and exploring modern technologies like
@@ -44,7 +50,7 @@ const About = () => {
             projects, participated in tech communities, and continuously strive
             to improve my DSA, DevOps, and system design skills.
           </p>
-          <p className="text-gray-300 text-lg leading-relaxed">
+          <p className="text-gray-300 text-lg leading-relaxed text-justify">
             My journey began as an intern working on a real-time event
             management system and has grown into a passion for developing robust
             solutions—from dashboards to alumni networks to cloud-native apps.
@@ -82,7 +88,7 @@ const About = () => {
         <div>
           <button
             onClick={() => router.push("/")}
-            className="px-5 py-2 bg-transparent text-white rounded-lg font-medium shadow-md"
+            className="px-5 py-2 bg-transparent text-white rounded-lg font-medium shadow-md hover:border"
           >
             ← Back
           </button>

@@ -14,8 +14,10 @@ const timelineData = [
     icon: <MdWork />,
     iconBg: "#2196f3",
     borderColor: "#2196f3",
-    points: [
-      "Developed full-stack web apps using React, Node.js, Express.js, and MongoDB.",
+    description: [
+      "Completed a 1-month summer internship as a Full-Stack Developer at TLK Industries, Surat.",
+      "Collaborated effectively within a team to design and develop web application features.",
+      "Built a full-stack web applications using React, Node.js, Express.js, and MongoDB.",
     ],
   },
   {
@@ -26,8 +28,10 @@ const timelineData = [
     icon: <MdWork />,
     iconBg: "#e91e63",
     borderColor: "#e91e63",
-    points: [
-      "Developed a live website for the client using HTML, CSS, and JavaScript.",
+    description: [
+      "Completed a 1-month summer internship as a Web Developer at Ample Infotech, Nadiad.",
+      "Conducted detailed research on multiple websites to understand design trends and key functionalities.",
+      "Developed and delivered a live internship project based on the research, implementing an effective and user-friendly design.",
     ],
   },
   {
@@ -38,9 +42,9 @@ const timelineData = [
     icon: <MdSchool />,
     iconBg: "#4caf50",
     borderColor: "#4caf50",
-    points: [
-      "Pursuing Computer Engineering in Devang Patel Institute of Advance Technology and Research",
-      "GPA: 8.31/10",
+    description: [
+      "Pursuing Computer Engineering in Devang Patel Institute of Advance Technology and Research at CHARUSAT University.",
+      "CGPA: 8.31/10",
     ],
   },
 ];
@@ -52,7 +56,7 @@ const TimelineItem = ({
   icon,
   iconBg,
   borderColor,
-  points,
+  description,
 }) => (
   <VerticalTimelineElement
     className="vertical-timeline-element"
@@ -60,6 +64,8 @@ const TimelineItem = ({
       background: "#1a1a1a",
       color: "#ffffff",
       borderBottom: `4px solid ${borderColor}`,
+      boxShadow: "none",
+      padding: "24px",
     }}
     contentArrowStyle={{ borderRight: `7px solid ${borderColor}` }}
     date={date}
@@ -70,7 +76,7 @@ const TimelineItem = ({
     <h3 className="vertical-timeline-element-title">{title}</h3>
     <h4 className="vertical-timeline-element-subtitle">{subtitle}</h4>
     <ul className="list-disc pl-5 py-5">
-      {points.map((point, idx) => (
+      {description.map((point, idx) => (
         <li key={idx}>{point}</li>
       ))}
     </ul>

@@ -12,7 +12,7 @@ const ProjectDetails = () => {
   const project = projects.find((p) => p.id.toString() === id);
 
   const [currentSlide, setCurrentSlide] = useState(0);
-  const [fullscreenImg, setFullscreenImg] = useState(null); // Modal image
+  const [fullscreenImg, setFullscreenImg] = useState(null);
 
   if (!project) return <div className="text-white p-8">Project not found</div>;
 
@@ -28,7 +28,7 @@ const ProjectDetails = () => {
 
   return (
     <div className="relative pt-12 min-h-screen w-full bg-black text-white overflow-hidden">
-      {/* Particles BG */}
+      {/* Particles */}
       <Particles
         className="absolute inset-0 z-0"
         quantity={300}
@@ -38,16 +38,6 @@ const ProjectDetails = () => {
       />
 
       <div className="relative z-10 px-8 py-10 max-w-6xl mx-auto">
-        {/* Back to Home Button */}
-        <div className="mb-4">
-          <button
-            onClick={() => router.push("/")}
-            className="px-5 py-2 bg-transparent text-white rounded-lg font-medium shadow-md"
-          >
-            ← Back
-          </button>
-        </div>
-
         {/* Title */}
         <h1 className="inline-block text-4xl md:text-5xl font-bold text-transparent mb-2 bg-clip-text bg-gradient-to-r from-cyan-400 via-blue-400 to-purple-500">
           {project.name}
@@ -58,12 +48,12 @@ const ProjectDetails = () => {
         </p>
 
         {/* Slideshow */}
-        <div className="relative w-full max-w-4xl mx-auto mb-10">
+        <div className="relative w-full mx-auto mb-10">
           <img
             src={project.images[currentSlide]}
             alt={`Slide ${currentSlide + 1}`}
-            className="w-full h-[200px] md:h-[350px] xl:h-[500px] object-cover rounded-xl shadow-lg border border-gray-700 cursor-pointer"
-            onClick={() => setFullscreenImg(project.images[currentSlide])}
+            className="w-full h-[250px] sm:h-[350px] md:h-[450px] xl:h-[600px] object-cover rounded-xl shadow-lg border border-gray-700 cursor-pointer transition duration-300"
+            onClick={() => setFullscreenImg(currentSlide)}
           />
           <button
             onClick={prevSlide}
@@ -80,7 +70,7 @@ const ProjectDetails = () => {
         </div>
 
         {/* Description */}
-        <p className="text-lg text-gray-300 mb-8 leading-relaxed">
+        <p className="text-lg text-gray-300 text-justify mb-8 leading-relaxed">
           {project.description}
         </p>
 
@@ -103,25 +93,65 @@ const ProjectDetails = () => {
         >
           View on GitHub
         </a>
+
+        {/* Back to Home */}
+        <div className="mt-4">
+          <button
+            onClick={() => router.push("/#projects")}
+            className="px-5 py-2 bg-transparent text-white rounded-lg font-medium shadow-md hover:border"
+          >
+            ← Back
+          </button>
+        </div>
       </div>
 
-      {/* Fullscreen Image Modal */}
-      {fullscreenImg && (
+      {/* Fullscreen Image Modal with navigation */}
+      {fullscreenImg !== null && (
         <div
-          className="fixed inset-0 bg-black bg-opacity-90 flex items-center justify-center z-50"
+          className="fixed inset-0 bg-black bg-opacity-95 flex items-center justify-center z-50"
           onClick={() => setFullscreenImg(null)}
         >
-          <img
-            src={fullscreenImg}
-            alt="Fullscreen"
-            className="max-w-full max-h-full rounded-lg shadow-lg"
-          />
-          <button
-            onClick={() => setFullscreenImg(null)}
-            className="absolute top-5 right-5 text-white text-3xl font-bold"
+          <div
+            className="relative w-full h-full flex items-center justify-center"
+            onClick={(e) => e.stopPropagation()}
           >
-            &times;
-          </button>
+            <img
+              src={project.images[fullscreenImg]}
+              alt="Fullscreen"
+              className="w-auto h-auto max-w-[98vw] max-h-[95vh] object-contain rounded-xl shadow-2xl"
+            />
+
+            {/* Close Button - top-left & red */}
+            <button
+              onClick={() => setFullscreenImg(null)}
+              className="absolute top-5 right-5 text-white text-4xl font-bold"
+            >
+              &times;
+            </button>
+
+            {/* Prev */}
+            <button
+              onClick={() =>
+                setFullscreenImg(
+                  (prev) =>
+                    (prev - 1 + project.images.length) % project.images.length
+                )
+              }
+              className="absolute left-6 top-1/2 transform -translate-y-1/2 text-white text-3xl bg-black bg-opacity-50 rounded-full p-3 hover:bg-opacity-80"
+            >
+              &#8592;
+            </button>
+
+            {/* Next */}
+            <button
+              onClick={() =>
+                setFullscreenImg((prev) => (prev + 1) % project.images.length)
+              }
+              className="absolute right-6 top-1/2 transform -translate-y-1/2 text-white text-3xl bg-black bg-opacity-50 rounded-full p-3 hover:bg-opacity-80"
+            >
+              &#8594;
+            </button>
+          </div>
         </div>
       )}
     </div>
