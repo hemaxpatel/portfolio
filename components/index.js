@@ -8,7 +8,6 @@ import ProjectCard from "./projects/projectcard";
 import projects from "./projects/projects";
 import Navbar from "./navbar";
 import Footer from "./footer";
-import { Dock, DockIcon, dockVariants } from "./ui/dock";
 
 export {
   Vortex,
@@ -21,7 +20,4 @@ export {
   projects,
   Navbar,
   Footer,
-  Dock,
-  DockIcon,
-  dockVariants,
 };
