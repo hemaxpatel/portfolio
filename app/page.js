@@ -8,7 +8,6 @@ import Intro from "@/components/intro";
 import IconCloud from "@/components/ui/icon-cloud";
 import Timeline from "@/components/timeline";
 import Projects from "@/components/projects.jsx";
-import Social from "@/components/social";
 
 export default function Home() {
   // icon cloud
