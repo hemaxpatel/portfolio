@@ -5,23 +5,20 @@ import { useRouter } from "next/navigation";
 import Particles from "@/components/ui/particles";
 
 const certifications = [
-  "Microsoft Certified: Azure Fundamentals (AZ-900)",
-  "Google Cloud Computing Foundations Certificate",
-  "AWS Academy Graduate - AWS Academy Cloud Developing",
+  "AWS Certified Cloud Practitioner",
+  "Microsoft Certified: Azure Fundamentals",
+  "Google Cloud Computing Foundations",
+  "Google Cloud Engineering Certificate",
   "HackerRank Certified Software Engineer",
   "HackerRank Certified Frontend Developer",
-  // "Postman API Fundamentals Student Expert",
-  // "IBM Node.js & MongoDB: Developing Backend Database Applicatons",
-  // "Meta Programming the JavaScript",
-  //   ,
 ];
 
 const achievements = [
   // "5⭐ in C, C++ and Python on HackerRank",
   "5⭐ in Problem Solving on HackerRank",
-  // "180+ Leetcode problems solved",
+  "250+ Coding problems solved",
   "7 skill badges and 26 badges of Google Cloud",
-  "20+ trophies and 110+ badges on Microsoft Learn",
+  "40+ trophies and 110+ badges on Microsoft Learn",
 ];
 
 const About = () => {
