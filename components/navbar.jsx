@@ -28,7 +28,7 @@ export default function Navbar() {
 
   return (
     <nav
-      className={`fixed w-full z-50 bg-transparent text-white transition-transform duration-300 ${
+      className={`fixed w-full z-50 bg-gradient-to-b from-black/30 to-transparent backdrop-blur-md text-white transition-all duration-300 ${
         showNavbar ? "translate-y-0" : "-translate-y-full"
       }`}
     >
@@ -36,20 +36,26 @@ export default function Navbar() {
         {/* Logo */}
         <Link
           href="/"
-          className="w-10 h-10 mt-2 rounded-lg bg-neutral-900 flex items-center justify-center font-bold shadow-md"
+          className="group flex items-center hover:scale-105 transition-transform duration-300"
         >
-          <p className="bg-gradient-to-r from-cyan-500 to-blue-500 bg-clip-text text-transparent">
-            HP
-          </p>
+          <div className="text-3xl font-mono font-bold flex items-center">
+            <span className="bg-gradient-to-r from-cyan-400 to-blue-500 bg-clip-text text-transparent">
+              &lt;
+            </span>
+            <span className="text-white mx-1">HP</span>
+            <span className="bg-gradient-to-r from-cyan-400 to-blue-500 bg-clip-text text-transparent">
+              /&gt;
+            </span>
+          </div>
         </Link>
 
         {/* Desktop Links */}
-        <div className="hidden lg:flex space-x-10">
+        <div className="hidden lg:flex space-x-2">
           {navLinks.map((link) => (
             <Link
               key={link.name}
               href={link.href}
-              className="font-medium hover:text-gray-300 transition duration-200"
+              className="px-4 py-2 rounded-lg font-medium hover:bg-white/10 hover:backdrop-blur-sm transition-all duration-200 hover:text-cyan-400"
             >
               {link.name}
             </Link>
