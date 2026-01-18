@@ -31,7 +31,6 @@ const timelineData = [
       " Collaborated with other developers to gather requirements and design web application features.",
       "Developed and maintained full-stack web applications using Next.js, Node.js, Express.js, and PostgreSQL, ensuring high performance and responsiveness.",
       " Participated in code reviews and debugging sessions to improve code quality and application stability.",
-      " Gained practical experience in agile development processes and version control using Git.",
     ],
   },
   {
@@ -77,21 +76,44 @@ const TimelineItem = ({
   <VerticalTimelineElement
     className="vertical-timeline-element"
     contentStyle={{
-      background: "#1a1a1a",
+      background: `linear-gradient(135deg, rgba(255,255,255,0.05) 0%, rgba(${
+        borderColor === "#ffb012"
+          ? "255,176,18"
+          : borderColor === "#2196f3"
+          ? "33,150,243"
+          : borderColor === "#e91e63"
+          ? "233,30,99"
+          : "76,175,80"
+      },0.1) 100%)`,
+      backdropFilter: "blur(20px)",
+      WebkitBackdropFilter: "blur(20px)",
       color: "#ffffff",
       borderBottom: `4px solid ${borderColor}`,
-      boxShadow: "none",
+      border: `1px solid ${borderColor}40`,
+      boxShadow: `0 8px 32px 0 ${borderColor}30`,
       padding: "24px",
+      borderRadius: "16px",
     }}
     contentArrowStyle={{ borderRight: `7px solid ${borderColor}` }}
     date={date}
     dateClassName="mx-2"
-    iconStyle={{ background: iconBg, color: "#fff" }}
+    iconStyle={{
+      background: iconBg,
+      color: "#fff",
+      boxShadow: `0 0 20px ${iconBg}80`,
+    }}
     icon={icon}
   >
-    <h3 className="vertical-timeline-element-title">{title}</h3>
-    <h4 className="vertical-timeline-element-subtitle">{subtitle}</h4>
-    <ul className="list-disc pl-5 py-5">
+    <h3
+      className="vertical-timeline-element-title font-bold text-xl"
+      style={{ color: borderColor }}
+    >
+      {title}
+    </h3>
+    <h4 className="vertical-timeline-element-subtitle text-gray-300 mt-1">
+      {subtitle}
+    </h4>
+    <ul className="list-disc pl-5 py-5 space-y-2 text-gray-200">
       {description.map((point, idx) => (
         <li key={idx}>{point}</li>
       ))}

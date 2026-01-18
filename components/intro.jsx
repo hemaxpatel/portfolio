@@ -5,7 +5,7 @@ import astronautImg from "../public/astronaut.png";
 
 const titles = [
   "Full Stack Developer",
-  "Cloud & DevOpsEnthusiast",
+  "Cloud & DevOps Enthusiast",
   "Problem Solver",
   "Imaginary Astronaut",
 ];
@@ -44,14 +44,14 @@ export default function Intro() {
   }, []);
 
   return (
-    <section className="hero container w-full min-h-screen flex items-center justify-center px-8 py-8">
+    <section className="hero container w-full min-h-screen flex items-center justify-center px-8 py-8 pt-28 lg:pt-8">
       <div className="w-full max-w-screen-xl flex flex-col xl:flex-row justify-center items-center md:px-24 px-12 gap-12">
         {/* Left Section */}
         <div className="left-flex flex-1 text-left z-10" data-aos="fade-right">
           {/* Mission Control Badge - Green */}
-          <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-white/5 backdrop-blur-sm border border-green-400/30 mb-6">
-            <div className="w-2 h-2 rounded-full bg-green-400 animate-ping" />
-            <span className="text-green-400 text-sm font-semibold">
+          <div className="inline-flex items-center gap-1 md:gap-2 px-2 md:px-4 py-1 md:py-2 rounded-full bg-white/5 backdrop-blur-sm border border-green-400/30 mb-4 md:mb-6">
+            <div className="w-1.5 h-1.5 md:w-2 md:h-2 rounded-full bg-green-400 animate-ping" />
+            <span className="text-green-400 text-xs md:text-sm font-semibold">
               MISSION CONTROL: ACTIVE
             </span>
           </div>
