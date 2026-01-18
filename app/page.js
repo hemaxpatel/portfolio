@@ -1,16 +1,26 @@
 "use client";
-// import React from "react";
-// import { useTheme } from "next-themes";
-// import { useEffect, useState } from "react";
+import { useState, useEffect } from "react";
+import dynamic from "next/dynamic";
 
-import Particles from "@/components/ui/particles";
 import Intro from "@/components/intro";
-import IconCloud from "@/components/ui/icon-cloud";
 import Timeline from "@/components/timeline";
 import Projects from "@/components/projects.jsx";
-// import Social from "@/components/social.jsx";
+
+// Dynamically import components with SSR disabled to prevent hydration errors
+const Particles = dynamic(() => import("@/components/ui/particles"), {
+  ssr: false,
+});
+const IconCloud = dynamic(() => import("@/components/ui/icon-cloud"), {
+  ssr: false,
+});
 
 export default function Home() {
+  const [isMounted, setIsMounted] = useState(false);
+
+  useEffect(() => {
+    setIsMounted(true);
+  }, []);
+
   // Custom images for skill planet
   const customImages = [
     { src: "/skills/c.png", alt: "C" },
@@ -52,13 +62,15 @@ export default function Home() {
     <>
       <div className="relative w-full flex flex-col items-center justify-start overflow-hidden bg-foreground md:shadow-xl min-h-screen">
         {/* particles bg*/}
-        <Particles
-          className="absolute inset-0 z-0"
-          quantity={800}
-          ease={80}
-          color={"#ffffff"}
-          refresh
-        />
+        {isMounted && (
+          <Particles
+            className="absolute inset-0 z-0"
+            quantity={900}
+            ease={80}
+            color={"#ffffff"}
+            refresh
+          />
+        )}
 
         {/* intro */}
         <Intro />
