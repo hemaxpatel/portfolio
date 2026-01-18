@@ -43,7 +43,7 @@ export default function Home() {
     { src: "/skills/nextjs.png", alt: "Next.js" },
     { src: "/skills/prisma.png", alt: "Prisma" },
     { src: "/skills/csharp.png", alt: "C#" },
-    { src: "/skills/dotnet.png", alt: ".NET" },
+    { src: "/skills/dotnet.svg", alt: ".NET" },
     { src: "/skills/aws.png", alt: "AWS" },
     { src: "/skills/gcp.svg", alt: "Google Cloud" },
     { src: "/skills/git.svg", alt: "Git" },
