@@ -40,7 +40,7 @@ const ProjectDetails = () => {
       <div className="relative z-10 px-8 py-10 max-w-6xl mx-auto space-y-8">
         {/* Title Section */}
         <div className="space-y-4">
-          <h1 className="text-5xl md:text-6xl font-bold">
+          <h1 className="text-4xl md:text-5xl font-bold">
             <span className="bg-gradient-to-r from-cyan-400 via-blue-500 to-purple-500 bg-clip-text text-transparent">
               {project.name}
             </span>

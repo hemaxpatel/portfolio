@@ -82,7 +82,7 @@ export default function Intro() {
           className="right-flex flex-1 justify-center items-center flex z-10"
           data-aos="zoom-in"
         >
-          <div className="hero-image -ml-12">
+          <div className="hero-image -ml-12 animate-float">
             <Image
               src={astronautImg}
               alt="Astronaut coding"

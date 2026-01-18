@@ -43,12 +43,12 @@ const socialLinks = [
     label: "LeetCode",
     hoverColor: "hover:text-yellow-400",
   },
-  {
-    icon: SiGooglecloud,
-    url: "https://www.cloudskillsboost.google/public_profiles/444b90fd-6496-431d-bf77-99290f5912ee",
-    label: "Google Cloud",
-    hoverColor: "hover:text-blue-400",
-  },
+  // {
+  //   icon: SiGooglecloud,
+  //   url: "https://www.cloudskillsboost.google/public_profiles/444b90fd-6496-431d-bf77-99290f5912ee",
+  //   label: "Google Cloud",
+  //   hoverColor: "hover:text-blue-400",
+  // },
 ];
 
 const Footer = () => {
