@@ -41,7 +41,7 @@ const ProjectDetails = () => {
         {/* Title Section */}
         <div className="space-y-4">
           <h1 className="text-4xl md:text-5xl font-bold">
-            <span className="bg-gradient-to-r from-cyan-400 via-blue-500 to-purple-500 bg-clip-text text-transparent">
+            <span className="bg-gradient-to-r from-cyan-400 via-emerald-500 to-lime-400 bg-clip-text text-transparent">
               {project.name}
             </span>
           </h1>
@@ -103,7 +103,7 @@ const ProjectDetails = () => {
         {/* Tech Stack */}
         <div className="space-y-4">
           <h2 className="text-3xl font-bold">
-            <span className="bg-gradient-to-r from-cyan-400 via-blue-500 to-purple-500 bg-clip-text text-transparent">
+            <span className="bg-gradient-to-r from-cyan-400 via-emerald-500 to-lime-400 bg-clip-text text-transparent">
               Tech Stack
             </span>
           </h2>

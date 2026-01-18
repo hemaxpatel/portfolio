@@ -169,7 +169,7 @@ const About = () => {
       <div className="relative z-10 max-w-6xl mx-auto px-8 pt-40 pb-20 space-y-24">
         {/* About Me Section */}
         <section id="about-me" className="space-y-6">
-          <h2 className="text-4xl font-bold bg-gradient-to-r from-blue-400 via-cyan-500 to-teal-600 bg-clip-text text-transparent">
+          <h2 className="inline-block text-4xl font-bold bg-gradient-to-r from-blue-400 via-cyan-500 to-teal-600 bg-clip-text text-transparent">
             About Me
           </h2>
           <div className="p-6 rounded-2xl backdrop-blur-xl bg-gradient-to-br from-white/5 to-white/0 border border-white/10">
@@ -186,7 +186,7 @@ const About = () => {
 
         {/* Achievements Section */}
         <section id="achievements" className="space-y-6">
-          <h2 className="text-4xl font-bold bg-gradient-to-r from-yellow-400 via-pink-400 to-purple-500 bg-clip-text text-transparent">
+          <h2 className="inline-block text-4xl font-bold bg-gradient-to-r from-yellow-400 via-pink-400 to-purple-500 bg-clip-text text-transparent">
             Achievements & Stats
           </h2>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-6">
@@ -234,7 +234,7 @@ const About = () => {
 
         {/* Certifications Section */}
         <section id="certifications" className="space-y-6">
-          <h2 className="text-4xl font-bold bg-gradient-to-r from-cyan-300 via-blue-500 to-purple-600 bg-clip-text text-transparent">
+          <h2 className="inline-block text-4xl font-bold bg-gradient-to-r from-cyan-400 via-blue-500 to-purple-600 bg-clip-text text-transparent">
             Certifications and Badges
           </h2>
           <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
