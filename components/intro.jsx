@@ -5,8 +5,7 @@ import astronautImg from "../public/astronaut.png";
 
 const titles = [
   "Full Stack Developer",
-  "Cloud Enthusiast",
-  // "Cloud & DevOps Enthusiast",
+  "Cloud & DevOpsEnthusiast",
   "Problem Solver",
   "Imaginary Astronaut",
 ];
@@ -49,6 +48,14 @@ export default function Intro() {
       <div className="w-full max-w-screen-xl flex flex-col xl:flex-row justify-center items-center md:px-24 px-12 gap-12">
         {/* Left Section */}
         <div className="left-flex flex-1 text-left z-10" data-aos="fade-right">
+          {/* Mission Control Badge - Green */}
+          <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-white/5 backdrop-blur-sm border border-green-400/30 mb-6">
+            <div className="w-2 h-2 rounded-full bg-green-400 animate-ping" />
+            <span className="text-green-400 text-sm font-semibold">
+              MISSION CONTROL: ACTIVE
+            </span>
+          </div>
+
           <div className="title-hi mb-4">
             <h1 className="text-4xl md:text-5xl text-white">
               Hello! <span className="animate-wave">👋🏻</span>
@@ -70,7 +77,7 @@ export default function Intro() {
               href="https://drive.google.com/drive/folders/1BN19cZinHWzRGpyarn03PJ4Pv9PYBBM0?usp=drive_link"
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-block mt-6 px-6 py-3 bg-gradient-to-r from-cyan-500 via-blue-500 to-purple-500 text-white rounded-full shadow-lg hover:scale-105 transition-transform duration-300"
+              className="inline-block mt-6 px-6 py-3 bg-gradient-to-r from-cyan-500 via-blue-600 to-purple-600 text-white rounded-full shadow-lg hover:scale-105 transition-transform duration-300"
             >
               Download Resume
             </a>
@@ -79,10 +86,22 @@ export default function Intro() {
 
         {/* Right Section (Image) */}
         <div
-          className="right-flex flex-1 justify-center items-center flex z-10"
+          className="right-flex flex-1 justify-center items-center flex relative z-10"
           data-aos="zoom-in"
         >
-          <div className="hero-image -ml-12 animate-float">
+          {/* Orbital rings */}
+          <div className="absolute inset-0 flex items-center justify-center">
+            <div className="w-full h-full max-w-lg max-h-lg rounded-full border border-cyan-400/20 animate-spin-slow" />
+            <div
+              className="absolute w-[90%] h-[90%] max-w-md max-h-md rounded-full border border-purple-400/20 animate-spin-slow"
+              style={{
+                animationDirection: "reverse",
+                animationDuration: "20s",
+              }}
+            />
+          </div>
+
+          <div className="hero-image -ml-12 animate-float relative z-10">
             <Image
               src={astronautImg}
               alt="Astronaut coding"
