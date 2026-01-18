@@ -55,9 +55,11 @@ export default function Navbar() {
             <Link
               key={link.name}
               href={link.href}
-              className="px-4 py-2 rounded-lg font-medium hover:bg-white/10 hover:backdrop-blur-sm transition-all duration-200 hover:text-cyan-400"
+              className="group px-4 py-2 rounded-lg font-medium hover:bg-white/10 hover:backdrop-blur-sm transition-all duration-200"
             >
-              {link.name}
+              <span className="group-hover:bg-gradient-to-r group-hover:from-cyan-400 group-hover:to-blue-500 group-hover:bg-clip-text group-hover:text-transparent">
+                {link.name}
+              </span>
             </Link>
           ))}
         </div>
