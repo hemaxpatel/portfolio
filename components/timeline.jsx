@@ -8,6 +8,19 @@ import { MdWork, MdSchool } from "react-icons/md";
 const timelineData = [
   {
     type: "work",
+    date: "January 2026 - Present",
+    title: ".NET Trainee",
+    subtitle: "@ Cygnet One, Ahmedabad",
+    icon: <MdWork />,
+    iconBg: "#ffb012",
+    borderColor: "#ffb012",
+    description: [
+      "Learning and working with .NET technologies including ASP.NET Core, C#, and SQL Server to build robust web applications.",
+      "Developing and maintaining web applications using .NET technologies, ensuring high performance and responsiveness to requests from the front-end.",
+    ],
+  },
+  {
+    type: "work",
     date: "May 2025 - June 2025",
     title: "Full Stack Developer Intern",
     subtitle: "@ TLK Industries, Remote",

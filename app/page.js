@@ -32,6 +32,8 @@ export default function Home() {
     "postgresql",
     "nextdotjs",
     "prisma",
+    "csharp",
+    "dotnet",
     "amazonaws",
     "googlecloud",
     "git",

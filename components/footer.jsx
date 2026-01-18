@@ -84,7 +84,7 @@ const Footer = () => {
             </a>
           ))}
         </div>
-        <p className="text-sm text-gray-400 pt-2">© 2025 Hemax Patel</p>
+        <p className="text-sm text-gray-400 pt-2">© 2026 Hemax Patel</p>
         {/* <p className="text-sm text-gray-400 pt-2">Made with ❤️ by Hemax</p> */}
       </div>
     </footer>

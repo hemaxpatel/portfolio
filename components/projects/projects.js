@@ -25,6 +25,34 @@ const projects = [
     github: "https://github.com/hemaxpatel/PANKH",
   },
   {
+    id: "Edu-Dash",
+    name: "Edu Dash",
+    tagline: "Full Stack School Management System",
+    thumbnail: "/edu-dash1.jpg",
+    description:
+      "Edu Dash is a full-stack school management system designed to streamline administrative tasks and enhance communication within educational institutions. It offers a comprehensive suite of features for managing student information, attendance, grades, and staff details, all accessible through an intuitive web interface. Edu Dash aims to simplify school management processes, improve efficiency, and foster better engagement among students, parents, teachers, and administrators.",
+    techStack: [
+      "Next.js",
+      "TypeScript",
+      "PostgreSQL",
+      "Prisma ORM",
+      "Tailwind CSS",
+      "Cloudinary",
+      "Clerk Auth",
+    ],
+    images: [
+      "/edu-dash1.jpg",
+      "/edu-dash2.jpg",
+      "/edu-dash3.jpg",
+      "/edu-dash4.jpg",
+      "/edu-dash5.jpg",
+      "/edu-dash6.jpg",
+      "/edu-dash7.jpg",
+      "/edu-dash8.jpg",
+    ],
+    github: "https://github.com/hemaxpatel/Edu-Dash",
+  },
+  {
     id: "digital-rosca",
     name: "Digital ROSCA",
     tagline: "Full Stack ROSCA FinTech Web App",
@@ -75,6 +103,23 @@ const projects = [
     github: "https://github.com/hemaxpatel/Urban-Axis",
   },
   {
+    id: "sabras",
+    name: "Sabras",
+    tagline: "Full Stack Subras Online Store",
+    thumbnail: "/sabras1.jpg",
+    description:
+      "Sabras is a powerful and scalable full-stack e-commerce web application that provides a seamless online shopping experience for users and robust management tools for administrators. Designed with a focus on performance, usability, and security, Sabras demonstrates the core functionalities required to run a modern online store. Sabras enables customers to browse products, manage their cart, and complete secure purchases, while also offering administrators a dedicated dashboard to manage products, view orders, and oversee user activity. The application integrates real-time payment functionality and leverages modern technologies to create an efficient and user-friendly shopping experience.",
+    techStack: ["React.js", "Node.js", "Express.js", "MongoDB", "Stripe"],
+    images: [
+      "/sabras1.jpg",
+      "/sabras2.jpg",
+      "/sabras3.jpg",
+      "/sabras4.jpg",
+      "/sabras5.jpg",
+    ],
+    github: "https://github.com/hemaxpatel/Sabras",
+  },
+  {
     id: "engineers-depot",
     name: "Engineer's Depot",
     tagline: "Full Stack Job Portal",
@@ -123,38 +168,22 @@ const projects = [
     ],
     github: "https://github.com/hemaxpatel/Velocity",
   },
-  {
-    id: "sabras",
-    name: "Sabras",
-    tagline: "Full Stack Subras Online Store",
-    thumbnail: "/sabras1.jpg",
-    description:
-      "Sabras is a powerful and scalable full-stack e-commerce web application that provides a seamless online shopping experience for users and robust management tools for administrators. Designed with a focus on performance, usability, and security, Sabras demonstrates the core functionalities required to run a modern online store. Sabras enables customers to browse products, manage their cart, and complete secure purchases, while also offering administrators a dedicated dashboard to manage products, view orders, and oversee user activity. The application integrates real-time payment functionality and leverages modern technologies to create an efficient and user-friendly shopping experience.",
-    techStack: ["React.js", "Node.js", "Express.js", "MongoDB", "Stripe"],
-    images: [
-      "/sabras1.jpg",
-      "/sabras2.jpg",
-      "/sabras3.jpg",
-      "/sabras4.jpg",
-      "/sabras5.jpg",
-    ],
-    github: "https://github.com/hemaxpatel/Sabras",
-  },
-  {
-    id: "om-party-plot",
-    name: "Om Partyplot",
-    tagline: "Live OM Party Plot Website",
-    thumbnail: "/om-party-plot1.png",
-    description:
-      "OM Party Plot is a sleek and responsive portfolio website created for showcasing the offerings and facilities of a party plot venue. It is designed to provide visitors with all the essential information about the venue, including available services, event types, gallery images, pricing, and contact details, making it easy for potential clients to explore and book the venue.",
-    techStack: ["HTML", "CSS", "JavaScript"],
-    images: [
-      "/om-party-plot1.png",
-      "/om-party-plot2.png",
-      "/om-party-plot3.png",
-    ],
-    github: "https://github.com/hemaxpatel/om-party-plot",
-  },
+
+  // {
+  //   id: "om-party-plot",
+  //   name: "Om Partyplot",
+  //   tagline: "Live OM Party Plot Website",
+  //   thumbnail: "/om-party-plot1.png",
+  //   description:
+  //     "OM Party Plot is a sleek and responsive portfolio website created for showcasing the offerings and facilities of a party plot venue. It is designed to provide visitors with all the essential information about the venue, including available services, event types, gallery images, pricing, and contact details, making it easy for potential clients to explore and book the venue.",
+  //   techStack: ["HTML", "CSS", "JavaScript"],
+  //   images: [
+  //     "/om-party-plot1.png",
+  //     "/om-party-plot2.png",
+  //     "/om-party-plot3.png",
+  //   ],
+  //   github: "https://github.com/hemaxpatel/om-party-plot",
+  // },
   {
     id: "ai-world",
     name: "AI World",
