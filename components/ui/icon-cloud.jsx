@@ -1,7 +1,6 @@
 "use client";
-import { useEffect, useMemo, useState } from "react";
-import { useTheme } from "next-themes";
-import { Cloud, fetchSimpleIcons, renderSimpleIcon } from "react-icon-cloud";
+import { useMemo } from "react";
+import { Cloud } from "react-icon-cloud";
 
 export const cloudProps = {
   containerProps: {
@@ -11,7 +10,6 @@ export const cloudProps = {
       alignItems: "center",
       width: "100%",
       background: "transparent",
-      // height: "screen",
       paddingTop: 30,
     },
   },
@@ -32,49 +30,36 @@ export const cloudProps = {
   },
 };
 
-export const renderCustomIcon = (icon, theme) => {
-  const bgHex = theme === "light" ? "#080510" : "#f3f2ef";
-  const fallbackHex = theme === "light" ? "#ffffff" : "#6e6e73";
-  const minContrastRatio = theme === "light" ? 1.2 : 2;
-
-  return renderSimpleIcon({
-    icon,
-    bgHex,
-    fallbackHex,
-    minContrastRatio,
-    size: 42,
-    aProps: {
-      href: undefined,
-      target: undefined,
-      rel: undefined,
-      onClick: (e) => e.preventDefault(),
-    },
-  });
+const renderCustomImage = (imageSrc, alt, index) => {
+  return (
+    <a key={`${alt}-${index}`} href="#" onClick={(e) => e.preventDefault()}>
+      <img
+        src={imageSrc}
+        alt={alt}
+        width="50"
+        height="50"
+        style={{
+          width: "50px",
+          height: "50px",
+          objectFit: "contain",
+        }}
+      />
+    </a>
+  );
 };
 
-export default function IconCloud({ iconSlugs }) {
-  const [data, setData] = useState(null);
-  const { theme } = useTheme();
-
-  useEffect(() => {
-    fetchSimpleIcons({ slugs: iconSlugs }).then(setData);
-  }, [iconSlugs]);
-
+export default function IconCloud({ customImages }) {
   const renderedIcons = useMemo(() => {
-    if (!data) return null;
+    if (!customImages || customImages.length === 0) {
+      return [];
+    }
 
-    return Object.values(data.simpleIcons).map((icon) =>
-      renderCustomIcon(icon, theme || "light")
+    return customImages.map((image, index) =>
+      renderCustomImage(image.src, image.alt, index)
     );
-  }, [data, theme]);
-
-  // Only render the Cloud component if data has loaded
-  if (!data) {
-    return <div>Loading...</div>; // Placeholder content
-  }
+  }, [customImages]);
 
   return (
-    // @ts-ignore
     <Cloud {...cloudProps}>
       <>{renderedIcons}</>
     </Cloud>

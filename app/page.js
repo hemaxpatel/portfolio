@@ -11,38 +11,33 @@ import Projects from "@/components/projects.jsx";
 // import Social from "@/components/social.jsx";
 
 export default function Home() {
-  // icon cloud
-  const slugs = [
-    "c",
-    "cplusplus",
-    "java",
-    "python",
-    "html5",
-    "css3",
-    "javascript",
-    "typescript",
-    "react",
-    "redux",
-    "tailwindcss",
-    "bootstrap",
-    "nodedotjs",
-    "express",
-    "postman",
-    "mongodb",
-    "mysql",
-    "postgresql",
-    "nextdotjs",
-    "prisma",
-    "csharp",
-    "dotnet",
-    "amazonaws",
-    "googlecloud",
-    "git",
-    "github",
-    "visualstudiocode",
-    "vercel",
-    // "docker",
-    // "figma",
+  // Custom images for skill planet
+  const customImages = [
+    { src: "/skills/c.png", alt: "C" },
+    { src: "/skills/cpp.svg", alt: "C++" },
+    { src: "/skills/java.svg", alt: "Java" },
+    { src: "/skills/py.svg", alt: "Python" },
+    { src: "/skills/html5.png", alt: "HTML5" },
+    { src: "/skills/css.png", alt: "CSS3" },
+    { src: "/skills/js.png", alt: "JavaScript" },
+    { src: "/skills/ts.png", alt: "TypeScript" },
+    { src: "/skills/react.png", alt: "React" },
+    { src: "/skills/redux.svg", alt: "Redux" },
+    { src: "/skills/tailwind.svg", alt: "Tailwind CSS" },
+    { src: "/skills/bootstrap.png", alt: "Bootstrap" },
+    { src: "/skills/nodejs.png", alt: "Node.js" },
+    { src: "/skills/express.png", alt: "Express" },
+    { src: "/skills/postman.png", alt: "Postman" },
+    { src: "/skills/mongodb.png", alt: "MongoDB" },
+    { src: "/skills/postgresql.png", alt: "PostgreSQL" },
+    { src: "/skills/nextjs.png", alt: "Next.js" },
+    { src: "/skills/prisma.png", alt: "Prisma" },
+    { src: "/skills/csharp.png", alt: "C#" },
+    { src: "/skills/dotnet.png", alt: ".NET" },
+    { src: "/skills/aws.png", alt: "AWS" },
+    { src: "/skills/gcp.svg", alt: "Google Cloud" },
+    { src: "/skills/git.svg", alt: "Git" },
+    { src: "/skills/github.png", alt: "GitHub" },
   ];
 
   // particles
@@ -77,7 +72,7 @@ export default function Home() {
             Technologies orbiting my brain
           </p>
         </div>
-        <IconCloud iconSlugs={slugs} />
+        <IconCloud customImages={customImages} />
 
         {/* My Journey */}
         <div className="mt-20 z-10 px-4 md:px-10 w-full max-w-5xl">
