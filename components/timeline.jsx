@@ -130,3 +130,39 @@ export default function Timeline() {
     </VerticalTimeline>
   );
 }
+
+//old simple timeline code
+
+// const TimelineItem = ({
+//   date,
+//   title,
+//   subtitle,
+//   icon,
+//   iconBg,
+//   borderColor,
+//   description,
+// }) => (
+//   <VerticalTimelineElement
+//     className="vertical-timeline-element"
+//     contentStyle={{
+//       background: "#1a1a1a",
+//       color: "#ffffff",
+//       borderBottom: `4px solid ${borderColor}`,
+//       boxShadow: "none",
+//       padding: "24px",
+//     }}
+//     contentArrowStyle={{ borderRight: `7px solid ${borderColor}` }}
+//     date={date}
+//     dateClassName="mx-2"
+//     iconStyle={{ background: iconBg, color: "#fff" }}
+//     icon={icon}
+//   >
+//     <h3 className="vertical-timeline-element-title">{title}</h3>
+//     <h4 className="vertical-timeline-element-subtitle">{subtitle}</h4>
+//     <ul className="list-disc pl-5 py-5">
+//       {description.map((point, idx) => (
+//         <li key={idx}>{point}</li>
+//       ))}
+//     </ul>
+//   </VerticalTimelineElement>
+// );
