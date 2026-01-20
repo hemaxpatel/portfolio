@@ -44,7 +44,6 @@ const timelineData = [
     description: [
       "Completed a live web development project integrating industry research to improve website design and online presence.",
       "Conducted thorough analysis of competitor websites to identify current design trends and essential functionalities.",
-      " Applied research insights to develop a user-friendly, effective website enhancing overall user experience.",
       "Gained practical industry exposure by delivering a functional project aligned with client needs and modern web standards.",
     ],
   },
@@ -80,10 +79,10 @@ const TimelineItem = ({
         borderColor === "#ffb012"
           ? "255,176,18"
           : borderColor === "#2196f3"
-          ? "33,150,243"
-          : borderColor === "#e91e63"
-          ? "233,30,99"
-          : "76,175,80"
+            ? "33,150,243"
+            : borderColor === "#e91e63"
+              ? "233,30,99"
+              : "76,175,80"
       },0.1) 100%)`,
       backdropFilter: "blur(20px)",
       WebkitBackdropFilter: "blur(20px)",
@@ -110,7 +109,12 @@ const TimelineItem = ({
     >
       {title}
     </h3>
-    <h4 className="vertical-timeline-element-subtitle text-gray-300 mt-1">
+    <h4
+      className="vertical-timeline-element-subtitle mt-2 text-sm font-medium opacity-80"
+      style={{
+        color: borderColor,
+      }}
+    >
       {subtitle}
     </h4>
     <ul className="list-disc pl-5 py-5 space-y-2 text-gray-200">

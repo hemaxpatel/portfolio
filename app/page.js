@@ -5,6 +5,7 @@ import dynamic from "next/dynamic";
 import Intro from "@/components/intro";
 import Timeline from "@/components/timeline";
 import Projects from "@/components/projects.jsx";
+import Snowfall from "react-snowfall";
 
 // Dynamically import components with SSR disabled to prevent hydration errors
 const Particles = dynamic(() => import("@/components/ui/particles"), {
@@ -61,11 +62,14 @@ export default function Home() {
   return (
     <>
       <div className="relative w-full flex flex-col items-center justify-start overflow-hidden bg-foreground md:shadow-xl min-h-screen">
+        {/* Snowfall effect */}
+        {/* <Snowfall color="white" snowflakeCount={200} /> */}
+
         {/* particles bg*/}
         {isMounted && (
           <Particles
             className="absolute inset-0 z-0"
-            quantity={900}
+            quantity={1000}
             ease={80}
             color={"#ffffff"}
             refresh

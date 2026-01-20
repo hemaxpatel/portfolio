@@ -24,6 +24,7 @@
     "react-icon-cloud": "^4.1.5",
     "react-icons": "^5.5.0",
     "react-intersection-observer": "^9.16.0",
+    "react-snowfall": "^2.4.0",
     "react-vertical-timeline-component": "^3.5.3",
     "simplex-noise": "^4.0.3",
     "tailwind-merge": "^2.6.0",
