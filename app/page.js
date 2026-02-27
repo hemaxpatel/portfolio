@@ -35,7 +35,6 @@ export default function Home() {
     { src: "/skills/react.png", alt: "React" },
     { src: "/skills/redux.svg", alt: "Redux" },
     { src: "/skills/tailwind.svg", alt: "Tailwind CSS" },
-    { src: "/skills/bootstrap.png", alt: "Bootstrap" },
     { src: "/skills/nodejs.png", alt: "Node.js" },
     { src: "/skills/express.png", alt: "Express" },
     { src: "/skills/postman.png", alt: "Postman" },
