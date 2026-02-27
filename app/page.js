@@ -45,6 +45,8 @@ export default function Home() {
     { src: "/skills/prisma.png", alt: "Prisma" },
     { src: "/skills/csharp.png", alt: "C#" },
     { src: "/skills/dotnet.svg", alt: ".NET" },
+    { src: "/skills/sqlserver.png", alt: "SQL Server" },
+    { src: "/skills/blazor.png", alt: "Blazor" },
     { src: "/skills/aws.png", alt: "AWS" },
     { src: "/skills/gcp.svg", alt: "Google Cloud" },
     { src: "/skills/git.svg", alt: "Git" },

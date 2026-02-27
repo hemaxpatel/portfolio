@@ -1,9 +1,10 @@
 "use client";
 
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { useParams, useRouter } from "next/navigation";
 import { projects } from "@/components/index.js";
 import Particles from "@/components/ui/particles";
+import { notFound } from "next/navigation";
 
 const ProjectDetails = () => {
   const params = useParams();
@@ -14,7 +15,10 @@ const ProjectDetails = () => {
   const [currentSlide, setCurrentSlide] = useState(0);
   const [fullscreenImg, setFullscreenImg] = useState(null);
 
-  if (!project) return <div className="text-white p-8">Project not found</div>;
+  // Trigger 404 page if project not found
+  if (!project) {
+    notFound();
+  }
 
   const nextSlide = () => {
     setCurrentSlide((prev) => (prev + 1) % project.images.length);
@@ -22,7 +26,7 @@ const ProjectDetails = () => {
 
   const prevSlide = () => {
     setCurrentSlide((prev) =>
-      prev === 0 ? project.images.length - 1 : prev - 1
+      prev === 0 ? project.images.length - 1 : prev - 1,
     );
   };
 
@@ -55,7 +59,7 @@ const ProjectDetails = () => {
           <div className="relative overflow-hidden rounded-2xl border border-white/10 shadow-2xl">
             <img
               src={project.images[currentSlide]}
-              alt={`Slide ${currentSlide + 1}`}
+              alt={`${project.name} - Screenshot ${currentSlide + 1} of ${project.images.length} showing project features and interface`}
               className="w-full h-[250px] sm:h-[350px] md:h-[450px] xl:h-[600px] object-cover cursor-pointer transition-transform duration-500 group-hover:scale-105"
               onClick={() => setFullscreenImg(currentSlide)}
             />
@@ -169,7 +173,7 @@ const ProjectDetails = () => {
           >
             <img
               src={project.images[fullscreenImg]}
-              alt="Fullscreen"
+              alt={`${project.name} - Full size view of screenshot ${fullscreenImg + 1}`}
               className="w-auto h-auto max-w-[98vw] max-h-[95vh] object-contain rounded-xl shadow-2xl"
             />
 
@@ -186,7 +190,7 @@ const ProjectDetails = () => {
               onClick={() =>
                 setFullscreenImg(
                   (prev) =>
-                    (prev - 1 + project.images.length) % project.images.length
+                    (prev - 1 + project.images.length) % project.images.length,
                 )
               }
               className="absolute left-6 top-1/2 transform -translate-y-1/2 text-white text-3xl bg-black bg-opacity-50 rounded-full p-3 hover:bg-opacity-80"

@@ -6,7 +6,7 @@ const ProjectCard = ({ project }) => {
       <div className="cursor-pointer rounded-xl overflow-hidden shadow-md hover:shadow-xl transition-all duration-300 border border-gray-700 hover:scale-[1.02]">
         <img
           src={project.thumbnail}
-          alt={project.name}
+          alt={`${project.name} project thumbnail - ${project.tagline}`}
           className="w-full h-48 object-cover"
         />
         <div className="p-4 text-center">

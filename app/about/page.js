@@ -113,7 +113,7 @@ const AnimatedCounter = ({ end, suffix, textColor, duration = 2000 }) => {
           setIsVisible(true);
         }
       },
-      { threshold: 0.1 }
+      { threshold: 0.1 },
     );
 
     if (counterRef.current) {
@@ -255,7 +255,7 @@ const About = () => {
                 <div className="relative z-10">
                   <img
                     src={cert.image}
-                    alt={cert.name}
+                    alt={`${cert.name} certification badge earned by Hemax Patel`}
                     className="w-full h-auto object-contain drop-shadow-lg"
                   />
                   <p className="text-sm text-gray-300 text-center mt-4 group-hover:text-cyan-300 transition-colors duration-300">
