@@ -1,4 +1,4 @@
-import { projects } from "@/components/index.js";
+import projects from "@/components/projects/projects.js";
 
 export default function sitemap() {
   const baseUrl = "https://hemax.vercel.app";
