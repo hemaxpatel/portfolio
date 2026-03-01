@@ -97,7 +97,7 @@ export const metadata = {
     },
   },
   verification: {
-    google: "your-google-verification-code",
+    google: "sa7BXUfIHSzOpRo_HZok1fsnmNxFxePYIChkxZMdWn4",
     // Add after verifying in Google Search Console
   },
 };
