@@ -100,7 +100,7 @@ const certificationBadges = [
   },
   {
     name: "Postman API Fundamentals Student Expert",
-    image: "/badges/api-fundamentals.png",
+    image: "/badges/postman-api-fundamentals.png",
     verifyUrl:
       "https://badges.parchment.com/public/assertions/CuGHr3xcRdGglt26Xs4Ddw?identity__email=hemaxpatel3124@gmail.com",
   },
