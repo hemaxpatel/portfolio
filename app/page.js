@@ -3,7 +3,7 @@ import { useState, useEffect } from "react";
 import dynamic from "next/dynamic";
 
 import Intro from "@/components/intro";
-import Timeline from "@/components/timeline";
+import Timeline from "@/components/timelines/timeline";
 import Projects from "@/components/projects.jsx";
 import Snowfall from "react-snowfall";
 

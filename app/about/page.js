@@ -73,7 +73,7 @@ const certificationBadges = [
     name: "Microsoft Certified: Azure Fundamentals",
     image: "/badges/azure-fundamentals.png",
     verifyUrl:
-      "https://www.credly.com/badges/82eb79d1-4150-4687-8c4c-412529827f1a",
+      "https://learn.microsoft.com/en-us/users/hemaxpatel/credentials/8de93b7ea37caa58",
   },
   {
     name: "Google Cloud Computing Foundations",
@@ -91,6 +91,12 @@ const certificationBadges = [
     name: "GitHub Foundations",
     image: "/badges/github-foundations.png",
     verifyUrl: "",
+  },
+  {
+    name: "GitHub Copilot",
+    image: "/badges/github-copilot.png",
+    verifyUrl:
+      "https://learn.microsoft.com/en-us/users/hemaxpatel/credentials/4995f1dd8896e2b5",
   },
   {
     name: "Postman API Fundamentals Student Expert",

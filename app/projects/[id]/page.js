@@ -2,7 +2,7 @@
 
 import React, { useState, useEffect } from "react";
 import { useParams, useRouter } from "next/navigation";
-import { projects } from "@/components/index.js";
+import projects from "@/components/index.js";
 import Particles from "@/components/ui/particles";
 import { notFound } from "next/navigation";
 
