@@ -6,6 +6,7 @@ const customImages = [
   { src: "/skills/py.svg", alt: "Python" },
   { src: "/skills/html5.png", alt: "HTML5" },
   { src: "/skills/css.png", alt: "CSS3" },
+  { src: "/skills/bootstrap.png", alt: "Bootstrap" },
   { src: "/skills/js.png", alt: "JavaScript" },
   { src: "/skills/ts.png", alt: "TypeScript" },
   { src: "/skills/react.png", alt: "React" },
